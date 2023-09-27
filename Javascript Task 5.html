@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <tr>
+            <label >Name:</label>
+            <input type="text"/>
+            <br/><br/>
+        </tr>
+        <tr>
+            <label>Email:</label>
+            <input type="email"/>
+            <br/><br/>
+        </tr>
+        <tr>
+            <label>Website:</label>
+            <input type="text"/>
+            <br/><br/>
+        </tr>
+        <tr>
+            <label>Message:</label>
+            <input type="text"/>
+            <br/><br/>
+        </tr>
+        <tr>
+            <button class="btn btn-secondary text-dark mx-2" type="submit" width="60px">Submit</button>
+        </tr>
+    </form>
+
+    <script>
+        function validateform(){  
+            var name=document.myform.name.value;  
+            var password=document.myform.password.value;  
+              
+            if (name==null || name==""){  
+              alert("Name can't be blank");  
+              return false;  
+            }else if(password.length<6){  
+              alert("Password must be at least 6 characters long.");  
+              return false;  
+              }  
+            }  
+    </script>
+</body>
+</html>
