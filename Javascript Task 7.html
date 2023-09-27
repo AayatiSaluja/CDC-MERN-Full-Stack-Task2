@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
+    <style>
+        button {
+            padding: 8px;
+        }
+        img{
+            position: relative;
+            animation: animation1 10s infinite;
+          }
+          img:hover{
+            animation-play-state: paused;
+          }
+          @keyframes animation1{
+            from{ left: 0%; } 
+            to{ left: 100%; }
+          }
+        </style>
+      </head>
+      <body>
+        <main>
+        <img src="./train.jpg" width="30%">
+        <center>
+            <br/>
+        <h2 class="text-primary">Click the following buttons to handle the annimation</h2>
+        <br/>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        </center>
+        </main>
+
+        <script>
+            /*  function start() {
+                position: relative;
+                animation: animation1 10s infinite;
+            }
+            function stop() {
+                animation-play-state: paused;
+            } */
+        </script>
+        
+      </body>
+</html>
